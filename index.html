@@ -621,6 +621,173 @@
             background: var(--steel-blue);
         }
 
+        /* Patent & Blue Ocean Section */
+        #innovations {
+            background: var(--dark-navy);
+        }
+
+        .innovations-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 4rem;
+            align-items: start;
+        }
+
+        .innovation-card {
+            background: rgba(0, 31, 63, 0.5);
+            border: 1px solid rgba(0, 119, 182, 0.3);
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .innovation-card-header {
+            background: var(--gradient-primary);
+            padding: 1.8rem 2.5rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .innovation-card-header .card-icon {
+            font-size: 2rem;
+        }
+
+        .innovation-card-header h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--pure-white);
+        }
+
+        .innovation-card-header p {
+            font-size: 0.85rem;
+            color: rgba(255,255,255,0.8);
+            margin-top: 0.2rem;
+        }
+
+        .innovation-card-body {
+            padding: 2rem 2.5rem;
+        }
+
+        .pdf-embed-wrapper {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 119, 182, 0.2);
+            background: #1a1a2e;
+        }
+
+        .pdf-embed-wrapper iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            display: block;
+        }
+
+        .pdf-download-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-top: 1.2rem;
+            background: var(--accent-blue);
+            color: var(--pure-white);
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .pdf-download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 119, 182, 0.4);
+        }
+
+        .patent-meta {
+            background: rgba(0, 119, 182, 0.08);
+            border: 1px solid rgba(0, 119, 182, 0.2);
+            border-radius: 12px;
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .patent-meta-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.4rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 0.9rem;
+        }
+
+        .patent-meta-row:last-child {
+            border-bottom: none;
+        }
+
+        .patent-meta-label {
+            color: rgba(255,255,255,0.5);
+            font-weight: 500;
+        }
+
+        .patent-meta-value {
+            color: var(--pure-white);
+            font-weight: 600;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+        }
+
+        .youtube-embed-wrapper {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 119, 182, 0.2);
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+        }
+
+        .youtube-embed-wrapper iframe {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            border: none;
+        }
+
+        .blue-ocean-desc {
+            color: rgba(255,255,255,0.75);
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .blue-ocean-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-top: 1.2rem;
+            background: transparent;
+            border: 2px solid var(--accent-blue);
+            color: var(--pure-white);
+            padding: 0.8rem 1.8rem;
+            border-radius: 50px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+
+        .blue-ocean-link:hover {
+            background: var(--accent-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0, 119, 182, 0.4);
+        }
+
+        @media (max-width: 900px) {
+            .innovations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
         /* Footer */
         footer {
             background: var(--dark-navy);
@@ -729,6 +896,7 @@
                 <li><a href="#solution">Our Solution</a></li>
                 <li><a href="#strategy">Strategy</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#innovations">Patent & Blue Ocean</a></li>
             </ul>
             <a href="#contact" class="cta-button">Partner With Us</a>
         </div>
@@ -1005,21 +1173,87 @@
         </div>
     </section>
 
-	<!-- Patent Section -->
-	<section id="patent" style="background: var(--dark-navy);">
-    	<div class="section-container">
-        	<div class="section-header">
-            	<div class="section-tag">INTELLECTUAL PROPERTY</div>
-            	<h2 class="section-title">Patent Filing</h2>
-            	<p class="section-description">PowerLoop has filed a provisional patent with the United States Patent and Trademark Office for the Battery Node system.</p>
-        	</div>
-        	<div style="text-align: center;">
-        	    <a href="PowerLoop_Patent_Provisional (3).pdf" target="_blank" class="cta-button" style="font-size: 1.1rem; padding: 1.2rem 3rem;">
-                	View Patent Application
-            	</a>
-        	</div>
-    	</div>
-	</section>
+    <!-- Patent & Blue Ocean Section -->
+    <section id="innovations">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">INNOVATION & STRATEGY</div>
+                <h2 class="section-title">Patent &amp; Blue Ocean Journey</h2>
+                <p class="section-description">PowerLoop's intellectual property and the strategic thinking that defines an entirely new market space in battery lifecycle management.</p>
+            </div>
+
+            <div class="innovations-grid">
+
+                <!-- Patent Card -->
+                <div class="innovation-card">
+                    <div class="innovation-card-header">
+                        <div class="card-icon">&#128196;</div>
+                        <div>
+                            <h3>Provisional Patent Application</h3>
+                            <p>United States Patent &amp; Trademark Office</p>
+                        </div>
+                    </div>
+                    <div class="innovation-card-body">
+                        <div class="patent-meta">
+                            <div class="patent-meta-row">
+                                <span class="patent-meta-label">Application #</span>
+                                <span class="patent-meta-value">63/988,274</span>
+                            </div>
+                            <div class="patent-meta-row">
+                                <span class="patent-meta-label">Filed</span>
+                                <span class="patent-meta-value">02/22/2026</span>
+                            </div>
+                            <div class="patent-meta-row">
+                                <span class="patent-meta-label">Type</span>
+                                <span class="patent-meta-value">Provisional Utility</span>
+                            </div>
+                            <div class="patent-meta-row">
+                                <span class="patent-meta-label">Status</span>
+                                <span class="patent-meta-value" style="color: #00e676;">FILED &#10003;</span>
+                            </div>
+                        </div>
+                        <div class="pdf-embed-wrapper">
+                            <iframe src="PowerLoop_Patent_Provisional.pdf" title="PowerLoop Provisional Patent Application"></iframe>
+                        </div>
+                        <a href="PowerLoop_Patent_Provisional.pdf" target="_blank" class="pdf-download-btn">
+                            &#8599; Open Full Patent PDF
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Blue Ocean Card -->
+                <div class="innovation-card">
+                    <div class="innovation-card-header">
+                        <div class="card-icon">&#127754;</div>
+                        <div>
+                            <h3>Blue Ocean Strategy Pitch</h3>
+                            <p>Creating uncontested market space</p>
+                        </div>
+                    </div>
+                    <div class="innovation-card-body">
+                        <p class="blue-ocean-desc">
+                            PowerLoop doesn't compete in the existing battery disposal market — it creates a new one. By combining retail vending with safe collection at the exact moment of purchase, we make competition irrelevant and unlock a market no one has owned before.
+                        </p>
+                        <p class="blue-ocean-desc">
+                            Watch our full Blue Ocean Strategy pitch to see how we mapped the competitive landscape, applied the ERRC framework, and defined our value curve against existing alternatives.
+                        </p>
+                        <div class="youtube-embed-wrapper">
+                            <iframe
+                                src="https://www.youtube.com/embed/xg4dONQgvws"
+                                title="PowerLoop Blue Ocean Strategy Pitch"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <a href="https://www.youtube.com/watch?v=xg4dONQgvws" target="_blank" class="blue-ocean-link">
+                            &#9654; Watch on YouTube
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 	
     <!-- Footer -->
     <footer>
@@ -1034,6 +1268,7 @@
                 <a href="#strategy">Strategy</a>
                 <a href="#about">About</a>
                 <a href="#contact">Contact</a>
+                <a href="#innovations">Patent &amp; Blue Ocean</a>
             </div>
 
             <p class="copyright">© 2026 PowerLoop. All rights reserved.</p>
@@ -1098,4 +1333,3 @@
     </script>
 </body>
 </html>
-
